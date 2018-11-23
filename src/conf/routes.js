@@ -13,6 +13,8 @@ export const baseRouteConfig = {
   name: 'Home',
   path: getBaseUrls().HOME,
   component: Home,
+  title: 'Dinosaur',
+  description: 'Dinosaur is a design and innovation company. We work to help shape modern brands for a purpose-driven future.',
   scripts: [{}],
 };
 
