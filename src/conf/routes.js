@@ -14,7 +14,7 @@ export const baseRouteConfig = {
   path: getBaseUrls().HOME,
   component: Home,
   title: 'Dinosaur',
-  description: 'Dinosaur is a design and innovation company. We work to help shape modern brands for a purpose-driven future.',
+  description: 'Dinosaur is a design and innovation company. We create beautiful experiences and services that help shape modern brands for a purpose-driven future.',
   scripts: [{}],
 };
 
