@@ -7,6 +7,7 @@ import { PersistGate } from 'redux-persist/es/integration/react';
 import createHistory from 'history/createBrowserHistory';
 import configureStore from 'store/configureStore';
 import * as serviceWorker from 'serviceWorker';
+import WebFont from 'webfontloader';
 
 import Router from 'components/shared/Router';
 
@@ -45,6 +46,12 @@ Body.classList.add(stylesBody.root);
 Root.classList.add(stylesRoot.root);
 
 ReactDOM.render(app, Root);
+
+WebFont.load({
+  google: {
+    families: ['Abril Fatface'],
+  }
+});
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
