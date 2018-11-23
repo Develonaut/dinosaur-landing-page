@@ -1,0 +1,8 @@
+@value dinosaur--soot from 'stylesheets/shared/colors.module.css';
+@value dinosaur--serif from 'stylesheets/shared/fonts.module.css';
+
+.root {
+  composes: dinosaur--serif;
+  font-size: 75px;
+  color: dinosaur--soot;
+}
