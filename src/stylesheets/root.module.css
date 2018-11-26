@@ -1,7 +1,3 @@
-.root {
-
-}
-
 .root :global(a) {
   text-decoration: none;
 }

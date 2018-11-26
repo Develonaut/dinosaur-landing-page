@@ -1,22 +1,22 @@
-@value content-max-width, padding--default from "stylesheets/shared/dimensions.module.css";
+@value content-max-width, padding-default, margin-default from "stylesheets/shared/dimensions.module.css";
 @value dinosaur--sans--bold from "stylesheets/shared/fonts.module.css";
 
 .root {
-  padding: 0 padding--default;
+  padding: 0 padding-default;
   composes: dinosaur--sans--bold;
   font-size: 14px;
   width: 100%;
   max-width: content-max-width;
   display: flex;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto margin-default auto;
 }
 
-.root__left {
+.left {
   flex: 0 1 auto;
 }
 
-.root__right {
+.right {
   flex: 1 1 auto;
   display: inline-grid;
   grid-template-columns: min-content min-content;
