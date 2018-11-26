@@ -49,7 +49,7 @@ ReactDOM.render(app, Root);
 
 WebFont.load({
   google: {
-    families: ['Abril Fatface'],
+    families: ['Abril Fatface', 'Open Sans'],
   }
 });
 

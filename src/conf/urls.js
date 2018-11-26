@@ -10,6 +10,13 @@ export function getBaseUrls() {
   };
 }
 
+export function getExternalUrls() {
+  return {
+    BEHANCE: '//www.behance.net/dinosaurcreative',
+    EMAIL: 'hello@dinosaur.design'
+  }
+}
+
 export function getAPIUrls() {
   return {};
 }

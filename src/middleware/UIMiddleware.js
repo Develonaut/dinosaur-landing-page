@@ -1,11 +1,11 @@
 
 
-let dispatch;
+// let dispatch;
 
 const UIMiddleware = ({
-  dispatch: storeDispatch,
+  // dispatch: storeDispatch,
 }) => {
-  dispatch = storeDispatch;
+  // dispatch = storeDispatch;
 
   return next => (action) => {
     switch (action.type) {

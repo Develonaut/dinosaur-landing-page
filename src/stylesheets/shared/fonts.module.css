@@ -1,3 +1,14 @@
+.dinosaur--sans--normal {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.dinosaur--sans--bold {
+  composes: dinosaur--sans--normal;
+  font-weight: 700;
+}
+
 .dinosaur--serif {
   font-family: 'Abril Fatface', cursive;
   letter-spacing: 1.3px;

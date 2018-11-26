@@ -60,7 +60,6 @@ function Router({
         <Route
           render={
             () => {
-
               return (
                 <React.Fragment>
                   { React.createElement(baseRouteComponent, baseRouteProps)}
