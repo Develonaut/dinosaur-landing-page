@@ -15,7 +15,7 @@ const ServiceCard = ({
   ])
   return (
     <div className={cardClass}>
-      { React.createElement(icon) }
+      { React.createElement(icon, { className: styles.root__icon}) }
       <h1 className={styles.root__heading}>{heading}</h1>
       <p className={styles.root__body}>{body}</p>
     </div>

@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { ReactComponent as IconDesign } from 'images/svgs/Icon__design.svg';
+import { ReactComponent as Leaves } from 'images/svgs/Leaves-green-darkGreen-yellow.svg';
 export default ({ className = '' }) => (
-  <IconDesign
+  <Leaves
     className={className}
   />
 );

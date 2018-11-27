@@ -1,5 +1,5 @@
 @value dinosaur--serif, dinosaur--sans--normal from "stylesheets/shared/fonts.module.css";
-@value padding-default from "stylesheets/shared/dimensions.module.css";
+@value padding-default, margin-default from "stylesheets/shared/dimensions.module.css";
 @value dinosaur-soot from "stylesheets/shared/colors.module.css";
 
 .root {
@@ -8,8 +8,19 @@
   flex-direction: column;
   align-items: center;
   padding: paddding-default;
+  margin-bottom: margin-default;
   background: transparent;
   z-index: 600;
+}
+
+.root:first-of-type {
+  padding-top: calc(padding-default * 2);
+}
+
+.root__icon {
+  position: relative;
+  display: inline-block;
+  margin-bottom: padding-default;
 }
 
 .root__heading,
@@ -19,8 +30,12 @@
 
 .root__heading {
   composes: dinosaur--serif;
+  font-size: 26px;
 }
 
 .root__body {
   composes: dinosaur--sans--normal;
+  font-size: 12px;
+  min-width: 188px;
+  width: 100%;
 }

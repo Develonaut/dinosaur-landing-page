@@ -44,6 +44,14 @@
   z-index: 300;
 }
 
+.root__leaves {
+  width: 104px;
+  height: 196px;
+  position: absolute;
+  right: -5px;
+  top: 0px;
+}
+
 .root__heading {
   display: flex;
   flex-direction: column;
@@ -69,12 +77,12 @@
 
 .root__heading__text--2 {
   font-size: 20px;
-  margin-top: -12px;
+  margin-top: -10px;
 }
 
 .root__heading__text--3 {
   font-size: 51px;
-  margin-top: -19px;
+  margin-top: -14px;
   position: relative;
   left: 27px;
 }

@@ -20,17 +20,19 @@
 
 .root__head__text--1 {
   font-size: 29px;
-  margin-left: -124px;
+  margin-left: -105px;
 }
 
 .root__head__text--2 {
   font-size: 18px;
-  margin-left: -82px;
+  margin-left: -77px;
+  margin-top: 4px;
 }
 
 .root__head__text--3 {
   font-size: 56px;
   line-height: 24px;
+  margin-top: 3px;
 }
 
 .root__body {
