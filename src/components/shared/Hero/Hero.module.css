@@ -1,21 +1,24 @@
-@value dinosaur--marine, dinosaur--sky from "stylesheets/shared/colors.module.css";
+@value dinosaur-marine, dinosaur-sky, dinosaur-violet from "stylesheets/shared/colors.module.css";
 @value tablet-width, padding-default from "stylesheets/shared/dimensions.module.css";
+@value nav-height from "components/shared/Nav/Nav.module.css";
 
 .root {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: 100%;
-  height: 597px;
+  padding-top: nav-height;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, dinosaur--sky, dinosaur--marine);
+  background-image: linear-gradient(to bottom, dinosaur-sky, dinosaur-violet);
+  z-index: 700;
 }
 
 .root__illustration {
   display: block;
   width: 100%;
   max-width: 799px;
-  min-height: 200px;
+  min-height: 189px;
   max-height: 549px;
   background: url("../../../images/svgs/Hero--illustration.svg") center center no-repeat;
   background-size: contain;
@@ -24,10 +27,51 @@
 .root__mask {
   display: block;
   width: 100%;
-  height: 252px;
+  height: 78px;
   background: url("../../../images/svgs/Hero--mask.svg") no-repeat;
-  background-position: center -5px;
-  background-size: contain;
+  background-position: center top;
+  background-size: cover;
+}
+
+.root__cloud-large,
+.root__cloud-small,
+.root__cloud-small-dot {
+  transition: all 250ms;
+  position: absolute;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: hover;
+}
+
+@-webkit-keyframes hover {
+  0% { transform: translateX(0) translateZ(0) scale(.32); }
+  25% { transform: translateX(10%) translateZ(0) scale(.32); }
+  50% { transform: translateX(0) translateZ(0) scale(.32); }
+  75% { transform: translateX(10%) translateZ(0) scale(.32); }
+  100% { transform: translateX(0) translateZ(0) scale(.32); }
+}
+
+.root__cloud-large {
+  width: 275px;
+  height: 121px;
+  top: -48px;
+  left: -28px;
+}
+
+.root__cloud-small {
+  width: 201px;
+  height: 47px;
+  left: -95px;
+  top: 276px;
+}
+
+.root__cloud-small-dot {
+  width: 232px;
+  height: 55px;
+  right: -92px;
+  top: 300px;
 }
 
 @media screen and (min-width: tablet-width) {

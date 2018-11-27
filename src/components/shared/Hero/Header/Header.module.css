@@ -1,35 +1,41 @@
 @value dinosaur--serif, dinosaur--sans--normal from "stylesheets/shared/fonts.module.css";
-@value dinosaur--snow from "stylesheets/shared/colors.module.css";
-@value padding-default from "stylesheets/shared/dimensions.module.css";
+@value dinosaur-snow from "stylesheets/shared/colors.module.css";
+@value padding-default, margin-default from "stylesheets/shared/dimensions.module.css";
 
 .root {
   font-size: 75px;
-  color: dinosaur--snow;
+  color: dinosaur-snow;
   display: flex;
   flex-direction: column;
   padding: 0 padding-default;
 }
 
-.head {
+.root__head {
   composes: dinosaur--serif;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: margin-default;
 }
 
-.head__text--1 {
-  font-size: 36px;
+.root__head__text--1 {
+  font-size: 29px;
+  margin-left: -124px;
 }
 
-.head__text--2 {
-  font-size: 28px;
+.root__head__text--2 {
+  font-size: 18px;
+  margin-left: -82px;
 }
 
-.head__text--3 {
-  font-size: 47px;
+.root__head__text--3 {
+  font-size: 56px;
+  line-height: 24px;
 }
 
-.body {
+.root__body {
   composes: dinosaur--sans--normal;
   font-size: 14px;
+  margin-bottom: margin-default;
+  text-align: center;
 }

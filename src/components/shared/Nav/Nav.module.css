@@ -1,26 +1,41 @@
 @value content-max-width, padding-default, margin-default from "stylesheets/shared/dimensions.module.css";
 @value dinosaur--sans--bold from "stylesheets/shared/fonts.module.css";
+@value dinosaur-snow from "stylesheets/shared/colors.module.css";
+
+@value nav-height: 104px;
 
 .root {
-  padding: 0 padding-default;
+  padding: padding-default;
   composes: dinosaur--sans--bold;
   font-size: 14px;
   width: 100%;
   max-width: content-max-width;
   display: flex;
-  position: relative;
-  margin: 0 auto margin-default auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: background 250ms ease-in;
+  background: transparent
 }
 
-.left {
+.root--sticky {
+  background: dinosaur-snow;
+}
+
+.root__left {
   flex: 0 1 auto;
 }
 
-.right {
+.root__right {
   flex: 1 1 auto;
   display: inline-grid;
   grid-template-columns: min-content min-content;
-  grid-gap: padding--default;
+  grid-gap: padding-default;
   align-items: center;
   justify-content: end;
+}
+
+.root__link {
+  color: dinosaur-snow;
 }

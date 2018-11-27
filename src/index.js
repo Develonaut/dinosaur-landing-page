@@ -11,7 +11,7 @@ import WebFont from 'webfontloader';
 
 import Router from 'components/shared/Router';
 
-import 'normalize.css';
+import 'stylesheets/normalize.module.css';
 import stylesHTML from 'stylesheets/html.module.css';
 import stylesBody from 'stylesheets/body.module.css';
 import stylesRoot from 'stylesheets/root.module.css';

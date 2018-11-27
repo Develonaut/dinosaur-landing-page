@@ -1,4 +1,4 @@
-@value dinosaur--cloud from "stylesheets/shared/colors.module.css";
+@value dinosaur-cloud from "stylesheets/shared/colors.module.css";
 
 .root {
   margin: 0;
@@ -8,7 +8,7 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: dinosaur--cloud;
+  background: dinosaur-cloud;
   height: 100%;
   width: 100%;
 }

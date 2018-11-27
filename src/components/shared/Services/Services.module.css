@@ -1,0 +1,80 @@
+@value padding-default from "stylesheets/shared/dimensions.module.css";
+@value dinosaur--serif from "stylesheets/shared/fonts.module.css";
+@value dinosaur-snow from "stylesheets/shared/colors.module.css";
+
+.root {
+  position: relative;
+  overflow: hidden;
+  padding-top: 133px;
+}
+
+.root__content {
+  position: relative;
+  padding: padding-default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  max-width: 659px;
+  margin: 0 auto;
+  min-width: 277px;
+  box-shadow: 0 6px 15px 0 rgba(49, 49, 49, 0.07);
+  background: url("../../../images/svgs/Services__bg__mask.svg") left top no-repeat;
+  z-index: 400;
+}
+
+.root__content::before {
+  content: '';
+  background: url("../../../images/svgs/Services__mask.svg") left top no-repeat;
+  width: 440px;
+  height: 329px;
+  position: absolute;
+  left: -50px;
+  top: -88px;
+  z-index: 500;
+}
+
+.root__bronto {
+  height: 439px;
+  width: 400px;
+  transform: scale(.58);
+  position: absolute;
+  top: -110px;
+  right: -110px;
+  z-index: 300;
+}
+
+.root__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -45px;
+  left: 20px;
+}
+
+.root__heading__text--1,
+.root__heading__text--2,
+.root__heading__text--3 {
+  composes: dinosaur--serif;
+  color: dinosaur-snow;
+  margin: 0;
+  z-index: 600;
+}
+
+.root__heading__text--1 {
+  font-size: 28px;
+  margin-left: -82px;
+}
+
+.root__heading__text--2 {
+  font-size: 20px;
+  margin-top: -12px;
+}
+
+.root__heading__text--3 {
+  font-size: 51px;
+  margin-top: -19px;
+  position: relative;
+  left: 27px;
+}
