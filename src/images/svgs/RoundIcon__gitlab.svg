@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="64px" viewBox="0 0 65 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>RoundIcon__gitlab</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="17.5" cy="17.5" r="17.5"></circle>
+        <filter x="-72.9%" y="-55.7%" width="245.7%" height="245.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.192156863   0 0 0 0 0.192156863   0 0 0 0 0.192156863  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-479.000000, -1814.000000)">
+            <g id="Footer" transform="translate(404.000000, 1822.000000)">
+                <g id="Group-21">
+                    <g id="RoundIcon__gitlab" transform="translate(90.000000, 0.800000)">
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#E65328" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M9.10073134,15.7061022 L17.4615486,26.571417 L8.29842285,19.7703853 C8.04503116,19.5803415 7.93947592,19.2531055 8.03449781,18.9575435 L9.10073134,15.7061022 Z M11.8876335,9.24542701 C11.7715079,8.918191 11.3070427,8.918191 11.1909172,9.24542701 L9.10073134,15.7061022 L13.9778932,15.7061022 L11.8876335,9.24542701 Z M13.9778932,15.7061022 L17.4615486,26.571417 L20.945204,15.7061022 L13.9778932,15.7061022 Z M26.8885994,18.9575435 L25.8223659,15.7061022 L17.4615486,26.571417 L26.6246744,19.7703853 C26.8780291,19.5803415 26.9835843,19.2531055 26.8885994,18.9575435 Z M23.7321431,9.24542701 C23.6160175,8.918191 23.1515523,8.918191 23.0354268,9.24542701 L20.945204,15.7061022 L25.8223659,15.7061022 L23.7321431,9.24542701 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>RoundIcon__facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="17.5" cy="17.5" r="17.5"></circle>
+        <filter x="-72.9%" y="-55.7%" width="245.7%" height="245.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.192156863   0 0 0 0 0.192156863   0 0 0 0 0.192156863  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-524.000000, -1814.000000)">
+            <g id="Footer" transform="translate(404.000000, 1822.000000)">
+                <g id="Group-21">
+                    <g id="RoundIcon__facebook" transform="translate(135.000000, 1.000000)">
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#4267B2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M15.5466797,26 L15.5466797,18.3964844 L13,18.3964844 L13,15.375 L15.5466797,15.375 L15.5466797,12.9943359 C15.5466797,10.4078125 17.1271484,9 19.4347656,9 C20.5404297,9 21.4900391,9.08300781 21.765625,9.11953125 L21.765625,11.8222656 L20.1652344,11.8222656 C18.9101562,11.8222656 18.6677734,12.4199219 18.6677734,13.2931641 L18.6677734,15.375 L21.5,15.375 L21.1115234,18.3964844 L18.6677734,18.3964844 L18.6677734,26" id="Path" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

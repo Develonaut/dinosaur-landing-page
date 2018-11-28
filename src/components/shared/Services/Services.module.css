@@ -1,11 +1,14 @@
-@value padding-default from "stylesheets/shared/dimensions.module.css";
+@value padding-default, margin-default from "stylesheets/shared/dimensions.module.css";
 @value dinosaur--serif from "stylesheets/shared/fonts.module.css";
 @value dinosaur-snow from "stylesheets/shared/colors.module.css";
 
+@value mobile-width: 659px;
+
 .root {
   position: relative;
-  overflow: hidden;
-  padding-top: 133px;
+  padding: 165px 20px 20px 20px;
+  max-width: mobile-width;
+  margin: 0 auto margin-default auto;
 }
 
 .root__content {
@@ -14,8 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80px;
-  max-width: 659px;
+  width: 100%;
+  max-width: mobile-width;
   margin: 0 auto;
   min-width: 277px;
   box-shadow: 0 6px 15px 0 rgba(49, 49, 49, 0.07);
@@ -34,12 +37,18 @@
   z-index: 500;
 }
 
+.root__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .root__bronto {
   height: 439px;
   width: 400px;
   transform: scale(.58);
   position: absolute;
-  top: -110px;
+  top: -75px;
   right: -110px;
   z-index: 300;
 }
@@ -49,7 +58,8 @@
   height: 196px;
   position: absolute;
   right: -5px;
-  top: 0px;
+  top: 35px;
+  z-index: 400;
 }
 
 .root__heading {
@@ -85,4 +95,13 @@
   margin-top: -14px;
   position: relative;
   left: 27px;
+}
+
+.root__plant {
+  position: absolute;
+  width: 129px;
+  height: 185px;
+  bottom: -15px;
+  left: -60px;
+  z-index: 500;
 }

@@ -1,0 +1,9 @@
+@value dinosaur-sunshine, dinosaur-snow from 'stylesheets/shared/colors.module.css';
+
+.root {
+  outline: none;
+  color: dinosaur-snow;
+  padding: 13px 40px;
+  box-shadow: 0 6px 15px 0 var(--black-7), 0 6px 15px 0 var(--black-7);
+  background-color: dinosaur-sunshine;
+}

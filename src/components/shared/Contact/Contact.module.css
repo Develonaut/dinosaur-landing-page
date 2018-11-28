@@ -1,0 +1,19 @@
+@value dinosaur-grass, dinosaur-leaves from 'stylesheets/shared/colors.module.css';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, dinosaur-grass, dinosaur-leaves);
+  position: relative;
+}
+
+.root__mask {
+  width: 100%;
+  background: url(/static/media/Contact--mask.d789dd59.svg) no-repeat;
+  background-size: cover;
+  background-position: center -5px;
+  height: 0;
+  padding: 0;
+  padding-bottom: 18%;
+}
