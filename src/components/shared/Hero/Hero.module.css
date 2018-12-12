@@ -1,5 +1,5 @@
 @value dinosaur-marine, dinosaur-sky, dinosaur-violet from "stylesheets/shared/colors.module.css";
-@value tablet-width, padding-default from "stylesheets/shared/dimensions.module.css";
+@value tablet-width, padding-default, content-max-width, desktop-width from "stylesheets/shared/dimensions.module.css";
 @value nav-height from "components/shared/Nav/Nav.module.css";
 
 .root {
@@ -20,8 +20,11 @@
   max-width: 799px;
   min-height: 189px;
   max-height: 549px;
-  background: url("../../../images/svgs/Hero--illustration.svg") center center no-repeat;
+  background: url("../../../images/svgs/Hero--illustration.svg") center center
+    no-repeat;
   background-size: contain;
+  z-index: 1;
+  padding-top: 34%;
 }
 
 .root__mask {
@@ -47,17 +50,27 @@
 }
 
 @-webkit-keyframes hover {
-  0% { transform: translateX(0) translateZ(0) scale(.32); }
-  25% { transform: translateX(10%) translateZ(0) scale(.32); }
-  50% { transform: translateX(0) translateZ(0) scale(.32); }
-  75% { transform: translateX(10%) translateZ(0) scale(.32); }
-  100% { transform: translateX(0) translateZ(0) scale(.32); }
+  0% {
+    transform: translateX(0) translateZ(0) scale(0.32);
+  }
+  25% {
+    transform: translateX(10%) translateZ(0) scale(0.32);
+  }
+  50% {
+    transform: translateX(0) translateZ(0) scale(0.32);
+  }
+  75% {
+    transform: translateX(10%) translateZ(0) scale(0.32);
+  }
+  100% {
+    transform: translateX(0) translateZ(0) scale(0.32);
+  }
 }
 
 .root__cloud-large {
   width: 275px;
   height: 121px;
-  top: -48px;
+  top: -165px;
   left: -28px;
 }
 
@@ -69,15 +82,59 @@
 }
 
 .root__cloud-small-dot {
-  width: 232px;
+  width: 285px;
   height: 55px;
   right: -92px;
   top: 300px;
+  z-index: -1;
+}
+
+.root__content {
+  position: relative;
+  max-width: content-max-width;
+  margin: 0 auto 20px auto;
 }
 
 @media screen and (min-width: tablet-width) {
-  .root__mask {
-    background-size: cover;
-    background-position: inherit;
+  .root__content {
+    position: relative;
+    max-width: content-max-width;
+    margin: 0 auto 0 auto;
+  }
+
+  .root__cloud-large {
+    top: -172px;
+  }
+
+  .root__cloud-small {
+    left: -339px;
+  }
+
+  .root__cloud-small-dot {
+    right: -332px;
+  }
+
+  @-webkit-keyframes hover {
+    0% {
+      transform: translateX(0) translateZ(0) scale(1);
+    }
+    25% {
+      transform: translateX(10%) translateZ(0) scale(1);
+    }
+    50% {
+      transform: translateX(0) translateZ(0) scale(1);
+    }
+    75% {
+      transform: translateX(10%) translateZ(0) scale(1);
+    }
+    100% {
+      transform: translateX(0) translateZ(0) scale(1);
+    }
+  }
+}
+
+@media screen and (min-width: desktop-width) {
+  .root__content {
+    margin-bottom: -20px;
   }
 }

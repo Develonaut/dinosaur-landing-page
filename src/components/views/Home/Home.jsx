@@ -1,10 +1,11 @@
-import React from 'react';
-import View from 'components/shared/View/View';
+import React from "react";
+import View from "components/shared/View/View";
 
-import Nav from 'components/shared/Nav/Nav';
-import Hero from 'components/shared/Hero/Hero';
-import Services from 'components/shared/Services/Services';
-import Contact from 'components/shared/Contact/Contact';
+import Nav from "components/shared/Nav/Nav";
+import Hero from "components/shared/Hero/Hero";
+import Services from "components/shared/Services/Services";
+import Contact from "components/shared/Contact/Contact";
+import Footer from "components/shared/Footer/Footer";
 
 const Home = () => {
   return (

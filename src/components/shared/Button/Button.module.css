@@ -1,9 +1,16 @@
-@value dinosaur-sunshine, dinosaur-snow from 'stylesheets/shared/colors.module.css';
+@value dinosaur-sunshine, dinosaur-snow, dinosaur-soot from 'stylesheets/shared/colors.module.css';
+@value dinosaur--sans--bold from "stylesheets/shared/fonts.module.css";
 
 .root {
+  composes: dinosaur--sans--bold;
+  font-size: 14px;
   outline: none;
   color: dinosaur-snow;
-  padding: 13px 40px;
-  box-shadow: 0 6px 15px 0 var(--black-7), 0 6px 15px 0 var(--black-7);
+  padding: 13px 30px;
+  box-shadow: 0 6px 15px 0 rgba(49, 49, 49, 0.07);
+  border: none;
   background-color: dinosaur-sunshine;
+  border-radius: 25px;
+  width: 144px;
+  text-align: center;
 }

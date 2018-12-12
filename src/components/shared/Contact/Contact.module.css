@@ -1,4 +1,5 @@
 @value dinosaur-grass, dinosaur-leaves from 'stylesheets/shared/colors.module.css';
+@value content-max-width, tablet-width from 'stylesheets/shared/dimensions.module.css';
 
 .root {
   display: flex;
@@ -10,10 +11,71 @@
 
 .root__mask {
   width: 100%;
-  background: url(/static/media/Contact--mask.d789dd59.svg) no-repeat;
+  background: url("../../../images/svgs/Contact--mask.svg") no-repeat;
   background-size: cover;
   background-position: center -5px;
   height: 0;
   padding: 0;
-  padding-bottom: 18%;
+  padding-bottom: 17%;
+  margin-bottom: 20px;
+}
+
+.root__content {
+  margin: 0 auto;
+  position: relative;
+  max-width: 506px;
+  width: 100%;
+}
+
+.root__header {
+  margin-bottom: 25px;
+}
+
+.root__tree-green {
+  position: absolute;
+  left: -50px;
+  top: 20%;
+}
+
+.root__tree-wrapper {
+  position: absolute;
+  right: -34px;
+  top: 27%;
+  height: 168px;
+  width: 102px;
+}
+
+.root__plant-blue {
+  transform: scaleX(-1);
+  position: absolute;
+  z-index: 1;
+}
+
+.root__blue-yellow {
+  position: absolute;
+  top: -28px;
+  right: 0px;
+}
+
+.root__stego {
+  z-index: 2;
+  transform: scale(1);
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: tablet-width) {
+  .root__stego {
+    transform: scale(1.25);
+    position: relative;
+    top: -26px;
+    left: -131px;
+  }
+
+  .root__tree-green {
+    top: 8%;
+  }
+
+  .root__tree-wrapper {
+    top: 6%;
+  }
 }

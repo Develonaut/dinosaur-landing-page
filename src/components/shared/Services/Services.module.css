@@ -1,6 +1,6 @@
-@value padding-default, margin-default from "stylesheets/shared/dimensions.module.css";
 @value dinosaur--serif from "stylesheets/shared/fonts.module.css";
 @value dinosaur-snow from "stylesheets/shared/colors.module.css";
+@value tablet-width, padding-default, margin-default, desktop-width from "stylesheets/shared/dimensions.module.css";
 
 @value mobile-width: 659px;
 
@@ -14,20 +14,23 @@
 .root__content {
   position: relative;
   padding: padding-default;
+  padding-bottom: calc(padding-default * 2);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: mobile-width;
+  min-height: 272px;
   margin: 0 auto;
   min-width: 277px;
   box-shadow: 0 6px 15px 0 rgba(49, 49, 49, 0.07);
-  background: url("../../../images/svgs/Services__bg__mask.svg") left top no-repeat;
+  background: white;
   z-index: 400;
+  border-radius: 25px;
 }
 
 .root__content::before {
-  content: '';
+  content: "";
   background: url("../../../images/svgs/Services__mask.svg") left top no-repeat;
   width: 440px;
   height: 329px;
@@ -37,16 +40,27 @@
   z-index: 500;
 }
 
+.root__content::after {
+  content: "";
+  position: absolute;
+  background: url("../../../images/svgs/Services__bg__mask.svg") left top
+    no-repeat;
+  height: 200px;
+  width: 100%;
+  top: 0;
+  border-top-right-radius: 25px;
+}
+
 .root__cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .root__bronto {
   height: 439px;
   width: 400px;
-  transform: scale(.58);
+  transform: scale(0.58);
   position: absolute;
   top: -75px;
   right: -110px;
@@ -57,8 +71,8 @@
   width: 104px;
   height: 196px;
   position: absolute;
-  right: -5px;
-  top: 35px;
+  right: -34px;
+  top: 70px;
   z-index: 400;
 }
 
@@ -67,7 +81,7 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: -45px;
+  top: -36px;
   left: 20px;
 }
 
@@ -104,4 +118,24 @@
   bottom: -15px;
   left: -60px;
   z-index: 500;
+}
+
+@media screen and (min-width: tablet-width) {
+  .root {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .root__cards {
+    flex-direction: row;
+  }
+
+  .root__plant {
+    left: -100px;
+  }
+
+  .root__bronto {
+    top: 59px;
+    transform: scale(1.3);
+  }
 }

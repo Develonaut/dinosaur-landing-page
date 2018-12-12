@@ -1,35 +1,26 @@
 // eslint-disable no-useless-escape
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/es/integration/react';
-import createHistory from 'history/createBrowserHistory';
-import configureStore from 'store/configureStore';
-import * as serviceWorker from 'serviceWorker';
-import WebFont from 'webfontloader';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/es/integration/react";
+import createHistory from "history/createBrowserHistory";
+import configureStore from "store/configureStore";
+import * as serviceWorker from "serviceWorker";
+import WebFont from "webfontloader";
 
-import Router from 'components/shared/Router';
+import Router from "components/shared/Router";
 
-import 'stylesheets/reset.module.css';
-import stylesHTML from 'stylesheets/html.module.css';
-import stylesBody from 'stylesheets/body.module.css';
-import stylesRoot from 'stylesheets/root.module.css';
+import "stylesheets/reset.module.css";
+import stylesHTML from "stylesheets/html.module.css";
+import stylesBody from "stylesheets/body.module.css";
+import stylesRoot from "stylesheets/root.module.css";
 
-const {
-  persistor,
-  store,
-} = configureStore();
+const { persistor, store } = configureStore();
 
 const app = (
   <Provider store={store}>
-    <PersistGate
-      loading={null}
-      onBeforeLift={null}
-      persistor={
-        persistor
-      }
-    >
+    <PersistGate loading={null} onBeforeLift={null} persistor={persistor}>
       <BrowserRouter>
         <Router history={createHistory()} />
       </BrowserRouter>
@@ -37,9 +28,9 @@ const app = (
   </Provider>
 );
 
-const HTML = document.querySelector('html');
-const Body = document.querySelector('body');
-const Root = document.getElementById('root');
+const HTML = document.querySelector("html");
+const Body = document.querySelector("body");
+const Root = document.getElementById("root");
 
 HTML.classList.add(stylesHTML.root);
 Body.classList.add(stylesBody.root);
@@ -49,7 +40,7 @@ ReactDOM.render(app, Root);
 
 WebFont.load({
   google: {
-    families: ['Abril Fatface', 'Open Sans'],
+    families: ["Abril Fatface", "Open Sans:400,700"]
   }
 });
 

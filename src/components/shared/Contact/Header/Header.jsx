@@ -1,19 +1,29 @@
-import React from 'react';
-import Button from 'components/shared/Button/Button'
+import React from "react";
+import classnames from "classnames";
+import Button from "components/shared/Button/Button";
 
-import styles from 'components/shared/Contact/Header/Header.module.css'
+import styles from "components/shared/Contact/Header/Header.module.css";
+import buttonStyles from "components/shared/Button/Button.module.css";
 
-const ContactHeader = () => {
+const ContactHeader = ({ className = "" }) => {
+  const headerClass = classnames([styles.root, className]);
   return (
-    <header className={styles.root}>
+    <header className={headerClass}>
       <section className={styles.root__head}>
-        <span className={styles['root__head__text--1']}>Like</span>
-        <span className={styles['root__head__text--2']}>what</span>
-        <span className={styles['root__head__text--3']}>you</span>
-        <span className={styles['root__head__text--3']}>see?</span>
+        <span className={styles["root__head__text--1"]}>Like</span>
+        <span className={styles["root__head__text--2"]}>what</span>
+        <span className={styles["root__head__text--3"]}>you</span>
+        <span className={styles["root__head__text--4"]}>see?</span>
       </section>
-      <Button>Say Hello!</Button>
-  </header>
+      <a
+        href="mailto:hello@dinosaur.design"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={buttonStyles.root}
+      >
+        Say Hello!
+      </a>
+    </header>
   );
 };
 
