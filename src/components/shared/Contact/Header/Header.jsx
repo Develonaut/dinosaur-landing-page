@@ -15,12 +15,7 @@ const ContactHeader = ({ className = "" }) => {
         <span className={styles["root__head__text--3"]}>you</span>
         <span className={styles["root__head__text--4"]}>see?</span>
       </section>
-      <a
-        href="mailto:hello@dinosaur.design"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={buttonStyles.root}
-      >
+      <a href="mailto:hello@dinosaur.design" className={buttonStyles.root}>
         Say Hello!
       </a>
     </header>
